@@ -2,17 +2,33 @@ Neighbourhood jetpack add-on for Firefox
 by John Tajima
 
 
-This is a super simple jetpack (http://jetpack.mozillalabs.com) add-on for firefox that takes a highlighted address and provides
-a context-menu link to view that address in:
+This is a super simple jetpack (http://jetpack.mozillalabs.com) add-on for firefox that takes a highlighted address 
+and provides a context-menu link to view that address in:
 - Google Maps Satellite View
 - Google Maps Street View (not working yet)
 - Bing Maps Bird's Eye View
 
-The original goal was to link it with Canada's MLS (realtors.ca) website so that you can easily view an MLS listing address in these maps,
-to better visualize the house, and the neighbourhood it's in, without having to cut and paste to different websites.
+The original goal was to link it with Canada's MLS (realtors.ca) website so that you can easily 
+view an MLS listing address in these maps. This would help better visualize the house, 
+and the neighbourhood it's in, without having to cut and paste to different websites.
 
-Since I didn't have access to jetpack docs, I simply show the context menus all the time, and you are required to highlight the 
-address.
+Since I didn't have access to jetpack docs, I simply show the context menus all the time, 
+and you are required to highlight the address.
 
-I will change this so that it automatically recognizes the MLS website, and only shows the options when on a valid MLS page.
+I will change this so that it automatically recognizes the MLS website, and only shows the options when 
+you are on a valid MLS listing page.
+
+Installation:
+-------------
+Check the jetpack documentation (http://jetpack.mozillalabs.com)
+
+
+Usage (for now):
+----------------
+
+- Highlight an address on a webpage (ie: "123 Elm St., Ottawa, ON" text on a webpage, like an MLS listing page)
+- Right-click to get the context menu
+- Select one of the 3 possible map views
+
+
 
