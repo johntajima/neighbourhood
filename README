@@ -22,6 +22,13 @@ Installation:
 -------------
 Check the jetpack documentation (http://jetpack.mozillalabs.com)
 
+The easiest way to try it out:
+- install jetpack SDK
+- type 'about:jetpack' as the URL in Firefox
+- go the develop tab
+- copy and paste the neighbourhood.js file contents into the develop editor and click 'try out this code'
+- go to a webpage that has an address, highlight the address and right-click to access context-menu
+
 
 Usage (for now):
 ----------------
