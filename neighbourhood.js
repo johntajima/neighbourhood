@@ -5,12 +5,13 @@
  */
 
 /**
+ * MLS table elements
  * table id = "_ctl0_elListingSummary_rptSpecifications"
- * td.PropDetailsSummaryValue:last
+ * div.PropDetailsSummaryValue:last
  * 
+ * jquery selectors aren't working though...need access to API docs
  * */
-
-
+ 
 GoogleURL = "http://maps.google.com";
 BingURL   = "http://maps.bing.com";
 
@@ -34,7 +35,6 @@ jetpack.menu.context.page.add({
 });
 
 
-/* wanted to get address directly from MLS page but jquery selectors were not working */
 function SatView() {
   var params = {
     q : jetpack.selection.text,
