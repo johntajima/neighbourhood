@@ -3,7 +3,7 @@
  * by John Tajima
  * http://github.com/redronin/neighbourhood
  *
- * a mozilla Jetpack add-on for viewing house addresses quickly on Google/Bing Maps
+ * a jetpack addon to quickly view Addresses in Google Maps/Bing Maps
  */
 
 GoogleURL = "http://maps.google.com";
@@ -16,7 +16,7 @@ jetpack.menu.context.page.beforeShow = function(menu, context) {
   menu.reset();
   if (jetpack.selection.text) {
     jetpack.menu.context.page.add({
-      label: "View Address '"+jetpack.selection.text)+ "'",
+      label: "View Address '"+jetpack.selection.text+ "'",
       menu: new jetpack.Menu([ { label: 'Google Sat. View', icon: "http://www.google.com/favicon.ico", command: SatView },
                                { label: 'Google Street View', icon: "http://www.google.com/favicon.ico", command: StreetView },
                                { label: "Bing Bird's Eye View", icon: "http://www.bing.com/favicon.ico", command: BirdView } ])
