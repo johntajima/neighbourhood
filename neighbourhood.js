@@ -41,8 +41,9 @@ function StreetView() {
   });
 };
 
+// apparently some addresses don't work, and I need a scene id for each one.
 function BirdView() {
-  openTab(BingURL, { style: 'o', v: 2, encType: 1, where1: jetpack.selection.text });
+  openTab(BingURL, { style: 'b', v: 2, encType: 1, where1: jetpack.selection.text });
 };
 
 function openTab(url, params, options) {
