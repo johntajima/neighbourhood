@@ -19,20 +19,28 @@ BingURL   = "http://maps.bing.com";
 jetpack.future.import("menu");
 jetpack.future.import('selection');
 
-jetpack.menu.context.page.add({
-  label: 'View Address in Satellite View',
-  command: SatView
-});
-
-jetpack.menu.context.page.add({
-  label: 'View Address in Street View',
-  command: StreetView
-});
-
-jetpack.menu.context.page.add({
-  label: 'View Address in Birds Eye View',
-  command: BirdView
-});
+jetpack.menu.context.page.beforeShow = function(menu, context) {
+  var target = "View Address '"+jetpack.selection.text+ "'";
+  var newmenu = {
+    label: target,
+    menu: new jetpack.Menu([
+      { label: 'Google Sat. View',
+        icon: "http://www.google.com/favicon.ico",
+        command: SatView
+      },
+      { label: 'Google Street View',
+        icon: "http://www.google.com/favicon.ico",
+        command: StreetView
+      },
+      { label: "Bing Bird's Eye View",
+        icon: "http://www.bing.com/favicon.ico",
+        command: BirdView
+      }
+    ])
+  };
+  menu.reset();
+  if (jetpack.selection.text) { jetpack.menu.context.page.add(newmenu); }
+}; 
 
 
 function SatView() {
