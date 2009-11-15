@@ -1,7 +1,9 @@
 /**
  * Neighbourhood for Addresses 
  * by John Tajima
- * a jetpack addon to quickly view Addresses in Google Maps/Bing Maps
+ * http://github.com/redronin/neighbourhood
+ *
+ * a mozilla Jetpack add-on for viewing house addresses quickly on Google/Bing Maps
  */
 
 GoogleURL = "http://maps.google.com";

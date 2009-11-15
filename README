@@ -1,41 +1,39 @@
-Neighbourhood jetpack add-on for Firefox
+Neighbourhood 
+a mozilla Jetpack add-on for viewing house addresses quickly on Google/Bing Maps
 by John Tajima
+--------------------------------------------------------------------------------
 
+This is a simple tool that will help you view a house in: 
+  a) Google Maps' Satellite View, 
+  b) Google Maps' Street View, 
+  c) Bing Maps' Birds Eye View
 
-This is a super simple jetpack (http://jetpack.mozillalabs.com) add-on for firefox that takes a highlighted address 
-and provides a context-menu link to view that address in:
-- Google Maps Satellite View
-- Google Maps Street View (not working yet)
-- Bing Maps Bird's Eye View
+Simply highlight an address on a webpage, right-click and select one of the 3 maps 
+to view the address in.
 
-The original goal was to link it with Canada's MLS (realtors.ca) website so that you can easily 
-view an MLS listing address in these maps. This would help better visualize the house, 
-and the neighbourhood it's in, without having to cut and paste to different websites.
+I wrote this to help us when we are searching for houses to quickly the view 
+neighbourhood the house is located in, without having to copy-and-paste into 
+the maps each time.
 
-Since I didn't have access to jetpack docs, I simply show the context menus all the time, 
-and you are required to highlight the address.
-
-I will change this so that it automatically recognizes the MLS website, and only shows the options when 
-you are on a valid MLS listing page.
 
 Installation:
 -------------
-Check the jetpack documentation (http://jetpack.mozillalabs.com)
 
-The easiest way to try it out:
+Install via the Jetpack Gallery: http://jetpackgallery.mozillalabs.com/jetpacks/104
+
+OR:
 - install jetpack SDK
 - type 'about:jetpack' as the URL in Firefox
 - go the develop tab
 - copy and paste the neighbourhood.js file contents into the develop editor and click 'try out this code'
-- go to a webpage that has an address, highlight the address and right-click to access context-menu
 
 
-Usage (for now):
+Usage:
 ----------------
 
 - Highlight an address on a webpage (ie: "123 Elm St., Ottawa, ON" text on a webpage, like an MLS listing page)
 - Right-click to get the context menu
-- Select one of the 3 possible map views
+- Select View "123 Elm St., Ottawa, ON" and select one of the 3 maps
 
 
 
